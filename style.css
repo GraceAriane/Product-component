@@ -112,8 +112,8 @@ p{
   .card{
     margin: auto;
     flex-direction: row;
-    width: 700px;
-    height: 500px;
+    width: 650px;
+    height: 450px;
     padding-bottom: 0;
   }
   .card .img{
@@ -128,12 +128,15 @@ p{
     margin: 0 auto;
   }
   .text{
-    width: 75%;
-    margin: 30px auto 30px auto;
-    gap: 20px;
+    width: 77%;
+    margin: 30px auto 10px auto;
+    gap: 10px;
+  }
+  p{
+    font-size: 15px;
   }
   .card button{
     width: 75%;
-    margin: auto;
+    margin:  20px auto;
   }
 }
