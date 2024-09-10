@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  width: 100vw;
+  overflow-x: hidden;
+  font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
+}
+h1{
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+.card{
+  margin: 20px auto;
+  width: 360px;
+  max-width: 95%;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.card .img{
+  border-radius: 10px 10px 0 0;
+  height: 250px;
+  background-image: url('images/image-product-mobile.jpg');
+  background-size: cover;
+}
+.elements{
+  margin: 20px auto;
+  width: 88%;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+h1{
+  color: hsl(212, 21%, 14%);
+  font-weight: 700;
+  font-size: 33px;
+}
+.text p, .indicate, .two{
+  color: hsl(228, 12%, 48%);
+}
+.indicate{
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 13px;
+  font-weight: 500;
+}
+p{
+  line-height: 25px;
+  font-size: 16px;
+}
+.prices{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.prices .one{
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+}
+.prices .two{
+  text-decoration: line-through;
+  font-size: 16px;
+  font-weight: 500;
+}
+.card button{
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  width: 100%;
+  margin: 17px 0;
+  padding: 15px 0;
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5 ease-in-out;
+}
+.card button:hover{
+  background-color: hsl(158, 30%, 24%);
+}
+.card button img{
+  margin-right: 10px;
+}
+@media (min-width: 700px){
+  body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .card{
+    margin: auto;
+    flex-direction: row;
+    width: 700px;
+    height: 500px;
+    padding-bottom: 0;
+  }
+  .card .img{
+    background: url('images/image-product-desktop.jpg') no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+  }
+  .elements{
+    width: 50%;
+    margin: 0 auto;
+  }
+  .text{
+    width: 75%;
+    margin: 30px auto 30px auto;
+    gap: 20px;
+  }
+  .card button{
+    width: 75%;
+    margin: auto;
+  }
+}
